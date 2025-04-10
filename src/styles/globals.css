@@ -21,7 +21,7 @@
 
 html {
   background: oklch(98.4% 0.003 247.858);
-  color: var(--foreground);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
