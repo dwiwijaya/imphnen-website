@@ -1,32 +1,63 @@
 import Image from 'next/image'
 import React from 'react'
 import LOGO from '@/assets/logo.png'
+import COVER from '@/assets/cover.png'
 
 const Hero = () => {
     return (
-        <header className="min-h-svh flex flex-col items-center justify-center gap-6 px-6 pt-0 pb-8 text-center bg-gradient-to-b from-sky-100 to-slate-50">
-            <nav className="flex gap-6 mb-4 text-sky-700 font-semibold text-sm itemsce">
-                <a href="#" className="hover:text-sky-500 transition">Home</a>
-                <a href="#" className="hover:text-sky-500 transition">About</a>
-                <a href="#" className="hover:text-sky-500 transition">Event</a>
-                <a href="#" className="hover:text-sky-500 transition">Testimonial</a>
+        <header className="min-h-svh flex flex-col items-center justify-start gap-8 p-6 text-center bg-white">
+            <svg
+                className="absolute inset-0 -z-10 h-full w-full stroke-sky-800 [mask-image:radial-gradient(50%_25%_at_top_center,white,transparent)]"
+                aria-hidden="true"
+            >
+                <defs>
+                    <pattern
+                        id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+                        width="100"
+                        height="100"
+                        x="50%"
+                        y="-1"
+                        patternUnits="userSpaceOnUse"
+                    >
+                        <path d="M.5 200V.5H200" fill="none"></path>
+                    </pattern>
+                </defs>
+                <rect
+                    width="100%"
+                    height="100%"
+                    strokeWidth="0"
+                    fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
+                ></rect>
+            </svg>
+            <nav className="w-full max-w-xl bg-sky-50 text-sky-700 flex justify-center gap-4 px-12 font-semibold text-sm">
+                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Beranda</a>
+                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Tentang</a>
+                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Acara</a>
+                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Testimoni</a>
             </nav>
 
-            <Image src={LOGO} alt="logo" width={200} height={200} className="w-64 drop-shadow-xl z-10" />
+            <div className="flex flex-col justify-center items-center gap-4">
+                <Image src={LOGO} alt="logo" width={200} height={200} className="w-80 drop-shadow-xl z-10 mt-32" />
 
-            <h1 className="text-4xl font-bold text-sky-700 mt-4">Welcome to IMPHNEN</h1>
-            <p className="max-w-xl text-gray-600">
-                Collaborate with passionate developers, get help from experts, learn new skills, 
-                and grow together through exciting events, knowledge sharing, memes, and more.
-            </p>
+                <div className="flex flex-col gap-3 items-center">
+                    <div className="px-4 py-1 text-sm bg-sky-200 text-sky-700 rounded-full font-medium animate-pulse">
+                        🚀 Komunitas Programmer
+                    </div>
+                    <h1 className="text-4xl font-bold text-sky-700">Selamat Datang di <strong>IMPHNEN</strong></h1>
+                    <p className="max-w-xl text-gray-600 text-sm">
+                        Bergabunglah dengan para developer yang penuh semangat, dapatkan bantuan dari para ahli,
+                        pelajari keterampilan baru, dan tumbuh bersama melalui acara seru, berbagi ilmu, meme, dan banyak lagi.
+                    </p>
+                </div>
 
-            <div className="flex gap-4 mt-6">
-                <a href="#" className="bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg px-5 py-2 transition">
-                    Join Our Community
-                </a>
-                <a href="#" className="bg-white border border-sky-500 text-sky-600 hover:bg-sky-50 font-semibold rounded-lg px-5 py-2 transition">
-                    Getting Started
-                </a>
+                <div className="flex gap-4 pt-4 text-sm w-full">
+                    <a href="#" className="flex-1 whitespace-nowrap bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg px-6 py-2.5 transition">
+                        Bergabung Sekarang
+                    </a>
+                    <a href="#" className="flex-1 whitespace-nowrap bg-white border border-sky-200 text-sky-600 hover:bg-sky-50 font-semibold rounded-lg px-6 py-2.5 transition">
+                        Jelajahi Fitur
+                    </a>
+                </div>
             </div>
         </header>
     )
