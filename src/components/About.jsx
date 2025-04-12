@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaUsers, FaSmileBeam, FaDiscord, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import Illust from '@/assets/social.svg';
+import { PiLightbulbFilamentDuotone, PiLightbulbLight, PiSlideshowDuotone, PiUsersDuotone, PiUsersLight } from 'react-icons/pi';
 const stats = [
     { icon: <FaUsers />, label: 'Anggota Aktif', value: '10.000+' },
     { icon: <FaDiscord />, label: 'Server Discord', value: 'Seru dan chaos 🤙' },
@@ -10,31 +11,28 @@ const stats = [
 
 export default function AboutSection() {
     return (
-        <section id="about" className="">
+        <section id="about" className="pt-4">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Text */}
                 <div>
                     <h2 className="text-4xl font-bold mb-6">Tentang Imphnen</h2>
                     <p className="text-lg mb-4">
-                        Imphnen, atau lengkapnya <strong>"Ingin Menjadi Programmer Handal Namun Enggan Ngoding"</strong>,
-                        adalah komunitas yang lahir dari keresahan para dev mageran tapi niat.
-                        Awalnya cuma grup meme di Facebook, sekarang udah jadi tempat nongkrongnya para pejuang bug,
-                        tukang commit typo, dan kolektor error lucu.
+                    IMPHNEN atau juga "Ingin Menjadi Programmer Handal Namun Enggan Ngoding" yang berawal dari sebuah grup facebook, dimana berisi orang-orang yang pengen menjadi programmer handal tetapi dia tidak ada semangat, motivasi, ataupun sebagainya untuk ngoding atau disebut dengan malas ngoding, dan digantikan aktivitasnya dengan scroll facebook. Kumunitas ini dibentuk pada awal 2024
                     </p>
 
                     {/* Fakta Menarik */}
                     <div className="space-y-3 text-base">
                         <div className="flex items-start gap-3">
-                            <span className="text-sky-500 text-xl">🔥</span>
+                            <span className="text-sky-500 text-xl"><PiUsersDuotone/></span>
                             <span><strong>150K+</strong> anggota komunitas</span>
                         </div>
                         <div className="flex items-start gap-3">
-                            <span className="text-sky-500 text-xl">👾</span>
+                            <span className="text-green-500 text-xl"><PiSlideshowDuotone/></span>
                             <span><strong>Meme</strong> & obrolan seru tiap hari</span>
                         </div>
                         <div className="flex items-start gap-3">
-                            <span className="text-sky-500 text-xl">💼</span>
-                            <span>Tempat lahirnya <strong>ide-ide kreatif</strong></span>
+                            <span className="text-yellow-500 text-xl"><PiLightbulbFilamentDuotone/></span>
+                            <span>Tempat lahirnya <strong>ide-ide revolusioner</strong></span>
                         </div>
                         
                     </div>

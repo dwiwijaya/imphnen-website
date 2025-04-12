@@ -16,7 +16,7 @@ export default function GithubOrgSection() {
   ];
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6 bg-gradient-to-br  rounded-3xl p-8 shadow-sm">
+    <section className="pt-4 grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6 bg-gradient-to-br from-slate-50 to-blue-50  rounded-3xl p-8 border border-slate-200">
 
       {/* KONTEN KIRI */}
       <div className="flex flex-col justify-between">
@@ -67,8 +67,8 @@ export default function GithubOrgSection() {
         </div>
       </div>
 
-      <div className="hidden lg:flex justify-end mt-10">
-        <FaGithub className="text-[260px] text-gray-800 opacity-10" />
+      <div className="hidden lg:flex justify-center mt-10">
+        <FaGithub className="text-[260px] text-gray-800 " />
       </div>
     </section>
   );

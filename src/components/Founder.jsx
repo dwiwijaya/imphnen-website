@@ -54,32 +54,38 @@ const founders = [
 
 export default function FoundersSection() {
   return (
-    <section className="text-center">
-      <h2 className="text-3xl font-bold mb-12">
-        Here are the <span className="text-sky-500">minds</span> behind <span className="italic">Imphnen</span>
+    <section className="text-center pt-4">
+      <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        Inilah para <span className="text-sky-500">otak di balik</span> <span className="font-extrabold uppercase">Imphnen</span>
       </h2>
-      <div className="grid gap-6 grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <p className="text-gray-600 mb-8">
+        Mereka yang dengan santai tapi konsisten ngebangun komunitas ini dari nol sampai se-chaotic sekarang 🤝
+      </p>
+
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="rounded-4xl px-6 pt-3 pb-5 border border-slate-200 transition-all text-left bg-white"
+            className="rounded-4xl px-6 pt-2 pb-0 border border-slate-200 transition-all text-left bg-white"
           >
             <div className="flex items-center space-x-4">
-              <div className="w-28 h-32 relative overflow-hidden">
+              <div className="relative overflow-hidden rounded-xl">
                 <Image
                   src={founder.avatar}
                   alt={founder.name}
-                  fill
-                  className=""
+                  width={112} // contoh: 112px (sama dengan w-28)
+                  height={130} // atau bisa biarin ratio asli (lihat opsi bawah)
+                  className="h-[130px] object-contain object-bottom"
                 />
               </div>
+
               <div>
                 <h3 className="text-xl font-semibold flex items-center gap-1">
                   {founder.name}
-                  <FaCheckCircle className="text-sky-500" />
+                  <FaCheckCircle size={16} className="text-sky-500" />
                 </h3>
                 <p className="text-gray-600 text-sm">{founder.role}</p>
-                <div className="flex justify-start mt-4 space-x-2 ">
+                <div className="flex justify-start mt-3 space-x-2 ">
                   <a href={founder.github} target="_blank" rel="noopener noreferrer">
                     <FaGithub className="text-gray-700 hover:text-sky-500 text-xl" />
                   </a>

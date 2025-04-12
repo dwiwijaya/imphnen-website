@@ -50,7 +50,7 @@ const Activity = () => {
     ]
 
     return (
-        <section id="activities" className="text-center">
+        <section id="activity" className="text-center pt-4">
             <h2 className="text-4xl font-bold mb-4">Aktivitas Komunitas</h2>
             <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-600">
                 Imphnen bukan sekadar tempat bercanda—setiap hari ada aja kegiatan seru! Dari postingan lucu, debat framework,

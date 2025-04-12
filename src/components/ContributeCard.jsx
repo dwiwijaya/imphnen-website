@@ -1,34 +1,66 @@
-import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram, FaCheckCircle } from "react-icons/fa";
 
 export default function ContributionCard() {
     return (
-        <section className="">
-            <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold">
-                    Punya ide keren untuk <span className="text-blue-500">mengembangkan web komunitas?</span>
+        <section className="relative pt-4">
+            {/* Background decorative blur blobs */}
+
+            <div className="text-center mb-10 relative z-10">
+                <h2 className="text-3xl font-bold leading-tight">
+                    Punya ide keren buat{" "}
+                    <span className="text-blue-600">ngembangin komunitas?</span> 🚀
                 </h2>
-                <p className="text-gray-600 mt-2">
-                    Silakan hubungi kami melalui platform berikut. Kami senang menerima masukan!
+                <p className="text-gray-600 mt-2 max-w-xl mx-auto">
+                    Kami terbuka banget untuk masukan, ide, dan kontribusi bareng!
                 </p>
             </div>
 
-            <div className="bg-white rounded-3xl border border-slate-200 p-8 flex flex-col md:flex-row items-center justify-between">
-                <div className="text-center md:text-left space-y-3">
-                    <h3 className="text-xl font-semibold">Dwi Wijaya</h3>
-                    <p className="text-sm text-gray-500">- Babu IMPHNEN</p>
-                    <p>Saya adalah seorang fullstack web developer yang suka membuat website namun cuma mentok dibuat repository aja</p>
-                    <div className="flex justify-center md:justify-start gap-4 text-2xl text-blue-400 mt-3">
-                        <a href="https://github.com/dwi" target="_blank"><FaGithub /></a>
-                        <a href="https://linkedin.com/in/dwi" target="_blank"><FaLinkedin /></a>
-                        <a href="https://t.me/dwi" target="_blank"><FaTelegram /></a>
+            <div className="overflow-hidden bg-gradient-to-br from-white to-slate-50 rounded-3xl border border-slate-200 px-8 pt-6  flex flex-col md:flex-row items-center justify-between gap-6 relative z-10 transition duration-300">
+                <div className="absolute -top-6 -left-10 w-40 h-40 bg-blue-300 opacity-30 rounded-full blur-2xl z-0" />
+                <div className="absolute -bottom-10 right-0 w-40 h-40 bg-orange-500 opacity-30 rounded-full blur-2xl z-0" />
+                <div className="text-center md:text-left space-y-4 max-w-xl">
+                    <div className="flex flex-row justify-center md:justify-start items-center md:items-start gap-2 md:gap-4">
+                        <h3 className="text-2xl font-bold text-gray-800">Dwi Wijaya</h3>
+                        <span className="text-sm bg-blue-100 text-blue-600 font-medium px-3 py-1 rounded-full">
+                            🚧 Open for Collab
+                        </span>
+                    </div>
+                    <p className="text-gray-700">
+                        Saya adalah pembuat website IMPHNEN, seorang <strong>fullstack web developer</strong> yang suka ngulik project, tapi sering mentok di buat repo aja karena malas 🥱
+                    </p>
+
+                    <div className="flex justify-center md:justify-start gap-3 text-2xl text-blue-500 mt-4">
+                        <a
+                            href="https://github.com/dwi"
+                            target="_blank"
+                            className="hover:text-blue-700 transition duration-200"
+                        >
+                            <FaGithub />
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/dwi"
+                            target="_blank"
+                            className="hover:text-blue-700 transition duration-200"
+                        >
+                            <FaLinkedin />
+                        </a>
+                        <a
+                            href="https://t.me/dwi"
+                            target="_blank"
+                            className="hover:text-blue-700 transition duration-200"
+                        >
+                            <FaTelegram />
+                        </a>
                     </div>
                 </div>
 
-                <img
-                    src="/avatars/founders/1.svg"
-                    alt="Avatar"
-                    className="w-40 h-auto mt-6 md:mt-0"
-                />
+                <div className="relative">
+                    <img
+                        src="/avatars/founders/1.svg"
+                        alt="Avatar"
+                        className="h-full w-full"
+                    />
+                </div>
             </div>
         </section>
     );

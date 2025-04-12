@@ -5,7 +5,7 @@ import COVER from '@/assets/cover.jpg'
 
 const Hero = () => {
     return (
-        <header className="min-h-svh flex flex-col items-center justify-start gap-8 p-6 text-center">
+        <header id="home" className="min-h-svh flex flex-col items-center justify-start gap-8 p-6 pt-4 text-center">
             <svg
                 className="absolute inset-0 -z-10 h-full w-full stroke-sky-800 [mask-image:radial-gradient(50%_25%_at_top_center,white,transparent)]"
                 aria-hidden="true"
@@ -29,11 +29,11 @@ const Hero = () => {
                     fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
                 ></rect>
             </svg>
-            <nav className="w-full max-w-xl  text-sky-700 flex justify-center gap-4 px-12 font-semibold text-sm">
-                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Beranda</a>
-                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Tentang</a>
-                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Acara</a>
-                <a href="#" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded transition">Testimoni</a>
+            <nav className="w-full max-w-xl  text-sky-700 flex justify-center px-12 font-semibold text-sm">
+                <a href="#home" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Beranda</a>
+                <a href="#about" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Tentang</a>
+                <a href="#activity" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Acara</a>
+                <a href="#testimony" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Testimoni</a>
             </nav>
 
             <div className="flex flex-col justify-center items-center gap-4">

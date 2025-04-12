@@ -1,16 +1,17 @@
 import Slider from "react-slick";
-import { FaQuoteLeft } from "react-icons/fa";
-import { useEffect } from "react";
+import { FaQuoteLeft, FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
+import { useEffect, useRef } from "react";
 
 const settings = {
+    initialSlide: 0,
     adaptiveHeight: false,
     variableWidth: false,
     centerPadding: 0,
     dots: true,
-    arrows: false,
+    arrows: false, // arrows tetap false, kita pakai custom button
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // default mobile
+    slidesToShow: 1,
     autoplaySpeed: 4500,
     slidesToScroll: 1,
     appendDots: dots => (
@@ -19,34 +20,39 @@ const settings = {
         </div>
     ),
     customPaging: i => (
-        <button className="w-3 h-3 rounded-full transition-all duration-300 ease-in-out"></button>
+        <button className="w-3 h-3 rounded-full transition-all duration-300 ease-in-out bg-slate-300 hover:bg-slate-500"></button>
     ),
     responsive: [
         {
-            breakpoint: 640, // sm (mobile)
+            breakpoint: 1536,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
+                slidesToScroll: 1
             }
-        },
-        {
-            breakpoint: 768, // md (tablet)
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 1024, // lg (small desktop)
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-
+        }
     ]
 };
 
-
-
 export default function TestimonialSection() {
+    const sliderRef = useRef(null);
+
     useEffect(() => {
         const slides = document.querySelectorAll('.slick-slide');
         let maxHeight = 0;
@@ -100,34 +106,60 @@ export default function TestimonialSection() {
         },
     ];
 
-
     return (
-        <section className="text-center">
+        <section id="testimony" className="text-center relative pt-4">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Testimoni Member</h2>
             <p className="text-gray-600 mb-8">
                 Kombinasi antara pengalaman receh dan serius dari para member setia.
             </p>
-            <Slider {...settings}>
+
+            {/* Tombol Prev */}
+
+            <button
+                onClick={() => sliderRef.current?.slickPrev()}
+                className="absolute left-0 sm:-left-1 top-[70%] -translate-y-1/2 z-10 p-3 bg-white border border-slate-200 rounded-full shadow-md hover:bg-slate-100 transition"
+            >
+                <FaChevronLeft className="text-xl text-slate-600" />
+            </button>
+
+            {/* Tombol Next */}
+            <button
+                onClick={() => sliderRef.current?.slickNext()}
+                className="absolute  right-0 sm:-right-2 top-[70%] -translate-y-1/2 z-10 p-3 bg-white border border-slate-200 rounded-full shadow-md hover:bg-slate-100 transition"
+            >
+                <FaChevronRight className="text-xl text-slate-600" />
+            </button>
+            {/* Slider */}
+            <Slider {...settings} ref={sliderRef}>
                 {testimonials.map((t, idx) => (
-                    <div key={idx} className="flex flex-col !gap-4 justify-between h-full transition-transform hover:scale-[1.02] bg-white border border-slate-200 rounded-xl p-6 text-left">
-                        <div className="flex flex-col gap-4">
-                            <FaQuoteLeft className="text-sky-500 text-2xl mb-" />
-                            <p className="text-gray-700 text-lg italic ">"{t.message}"</p>
-                        </div>
-                        <div className="!flex items-center gap-4 !h-fit">
-                            <img
-                                src={t.avatar}
-                                alt={t.name}
-                                className="w-12 h-12 rounded-full object-cover"
-                            />
-                            <div className="flex flex-col">
-                                <p className="font-semibold text-gray-800">{t.name}</p>
-                                <p className="text-sm text-gray-500">{t.role}</p>
+                    <div key={idx} className="group flex flex-col !gap-4 h-full transition-transform hover:scale-[1.02] bg-white border border-slate-200 rounded-xl p-6 text-left">
+
+                        <div className="!flex items-center justify-between gap-4 !h-fit">
+                            <div className="flex gap-3">
+                                <img
+                                    src={t.avatar}
+                                    alt={t.name}
+                                    className="w-12 h-12 rounded-full object-cover"
+                                />
+                                <div className="flex flex-col">
+                                    <p className="font-semibold text-gray-800">{t.name}</p>
+                                    <p className="text-sm text-gray-500">{t.role}</p>
+                                </div>
+                            </div>
+                            <div className={`relative bg-blue-50 rounded-full  w-11 !h-11 flex items-center justify-center`}>
+                                <div className={`absolute w-full h-full border-2 border-dashed rounded-full border-blue-300 group-hover:animate-spin-slow`}></div>
+                                {/* Icon tetap diam */}
+                                <div className="text-xl z-10 !h-fit">
+                                    <FaQuoteRight size={16} className="text-blue-400" />
+                                </div>
                             </div>
                         </div>
+                        <hr className="border-slate-200" />
+                        <p className="text-gray-700 text-lg italic">"{t.message}"</p>
                     </div>
                 ))}
             </Slider>
+
         </section>
     );
 }
