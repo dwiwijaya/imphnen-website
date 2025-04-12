@@ -1,10 +1,10 @@
 {
-    "name": "Nextjs Landing Starter",
-    "short_name": "Landing",
+    "name": "IMPHNEN Landing Page",
+    "short_name": "IMPHNEN",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#4f46e5",
+    "theme_color": "#69a4d9",
     "icons": [
         {
             "src": "/icons/icon-192.png",

@@ -34,12 +34,8 @@ export default function Home() {
 
   return (
     <>
-      <NextSeo
-        title="Next.js Pages Router Starter"
-        description="A modern starter template using Next.js Pages Router — perfect for developer-focused landing pages with Tailwind, Framer Motion, AOS, and more."
-      />
       <Head>
-        <title>Next.js Starter Landing</title>
+        <title>IMPHNEN - Komunitas Enggan Ngoding</title>
       </Head>
       <main className={`${plusJakarta.className} relative bg-slate-50 `}>
         <div className="max-w-6xl mx-auto p-6 flex flex-col gap-18">

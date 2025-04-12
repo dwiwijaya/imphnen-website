@@ -1,21 +1,21 @@
-const defaultTitle = 'NextJS Landing Starter';
-const defaultDescription = 'Modern and minimal landing page starter built with Next.js';
+const defaultTitle = 'IMPHNEN Landing Page';
+const defaultDescription = 'Sebuah komunitas revolusioner gerakan enggan ngoding, dimana kita lebih fokus scroll fesnukan daripada lanjut ngoding.';
 
 const SEO = {
     title: defaultTitle,
     description: defaultDescription,
     openGraph: {
         type: 'website',
-        locale: 'en_US',
-        url: 'https://nextjs-landing-starter.vercel.app/', // Your website URL
+        locale: 'id_ID',
+        url: 'https://imphnen-website.vercel.app/', // Your website URL
         site_name: defaultTitle,
         title: defaultTitle,
         description: defaultDescription,
         images: [
             {
-                url: 'https://nextjs-landing-starter.vercel.app/og-image.jpg', // Your image URL
-                width: 1200,
-                height: 630,
+                url: 'https://imphnen-website/og-image.jpg', // Your image URL
+                width: 2550,
+                height: 945,
                 alt: defaultTitle,
             },
         ],
