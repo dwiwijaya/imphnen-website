@@ -66,7 +66,7 @@ export default function FoundersSection() {
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="rounded-4xl px-6 pt-2 pb-0 border border-slate-200 transition-all text-left bg-white"
+            className="rounded-4xl px-5 pt-2 pb-0 border border-slate-200 transition-all text-left bg-white"
           >
             <div className="flex items-center space-x-4">
               <div className="relative overflow-hidden rounded-xl">
