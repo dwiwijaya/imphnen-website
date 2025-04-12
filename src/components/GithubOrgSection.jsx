@@ -30,7 +30,9 @@ export default function GithubOrgSection() {
           </p>
 
           <a
-            href="https://github.com/YOUR_ORG"
+            href="https://github.com/imphnen"
+            title="Kunjungi GitHub Kami"
+            aria-label="Kunjungi GitHub Kami"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-900 transition"

@@ -10,12 +10,13 @@ const Hero = () => {
 
             <Pattern />
             <header className="z-10 flex flex-col items-center justify-start gap-8 p-6 pt-10 text-center">
-                <nav className="z-10 sm:gap-4 w-full max-w-xl  text-sky-700 flex justify-center px-12 font-semibold text-sm">
-                    <a href="#home" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Beranda</a>
-                    <a href="#about" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Tentang</a>
-                    <a href="#activity" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Acara</a>
-                    <a href="#testimony" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Testimoni</a>
+                <nav className="z-10 sm:gap-4 w-full max-w-xl text-sky-700 flex justify-center px-12 font-semibold text-sm">
+                    <a href="#home" aria-label="Beranda" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Beranda</a>
+                    <a href="#about" aria-label="Tentang" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Tentang</a>
+                    <a href="#activity" aria-label="Acara" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Acara</a>
+                    <a href="#testimony" aria-label="Testimoni" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Testimoni</a>
                 </nav>
+
 
                 <div className="z-10 flex flex-col justify-center items-center gap-4">
                     <Image src={LOGO} alt="logo" width={200} height={200} className="w-80 drop-shadow-xl z-10 mt-18 xl:mt-28" />

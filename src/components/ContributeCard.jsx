@@ -31,21 +31,24 @@ export default function ContributionCard() {
 
                     <div className="flex justify-center md:justify-start gap-3 text-2xl text-blue-500 mt-4">
                         <a
-                            href="https://github.com/dwi"
+                            href="https://github.com/dwiwijaya"
+                            aria-label="GitHub Dwi Wijaya"
                             target="_blank"
                             className="hover:text-blue-700 transition duration-200"
                         >
                             <FaGithub />
                         </a>
                         <a
-                            href="https://linkedin.com/in/dwi"
+                            href="https://linkedin.com/in/dwiwijaya"
+                            aria-label="LinkedIn Dwi Wijaya"
                             target="_blank"
                             className="hover:text-blue-700 transition duration-200"
                         >
                             <FaLinkedin />
                         </a>
                         <a
-                            href="https://t.me/dwi"
+                            href="https://t.me/"
+                            aria-label="Telegram Dwi Wijaya"
                             target="_blank"
                             className="hover:text-blue-700 transition duration-200"
                         >

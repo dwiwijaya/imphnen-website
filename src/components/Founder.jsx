@@ -86,13 +86,13 @@ export default function FoundersSection() {
                 </h3>
                 <p className="text-gray-600 text-sm">{founder.role}</p>
                 <div className="flex justify-start mt-3 space-x-2 ">
-                  <a href={founder.github} target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="text-gray-700 hover:text-sky-500 text-xl" />
+                  <a href={founder.github} target="_blank" rel="noopener noreferrer" aria-label={`Github ${founder.name}`}>
+                    <FaGithub className="text-gray-700 hover:text-sky-500 text-xl"  />
                   </a>
-                  <a href={founder.linkedin} target="_blank" rel="noopener noreferrer">
+                  <a href={founder.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`Linkedin ${founder.name}`}>
                     <FaLinkedin className="text-gray-700 hover:text-sky-500 text-xl" />
                   </a>
-                  <a href={founder.telegram} target="_blank" rel="noopener noreferrer">
+                  <a href={founder.telegram} target="_blank" rel="noopener noreferrer" aria-label={`Telegram ${founder.name}`}>
                     <FaTelegramPlane className="text-gray-700 hover:text-sky-500 text-xl" />
                   </a>
                 </div>

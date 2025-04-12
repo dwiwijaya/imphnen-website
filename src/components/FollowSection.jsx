@@ -76,8 +76,6 @@ export default function FollowUsSection() {
                 {socialLinks.map((link, index) => (
                     <div
                         key={index}
-                        href={link.url}
-                        target="_blank"
                         rel="noopener noreferrer"
                         className={`p-4 relative border-1 bg-white border-gray-200 rounded-2xl transition-transform hover:scale-[1.02]  text-left group`}
                     >
@@ -99,6 +97,7 @@ export default function FollowUsSection() {
 
                         <a
                             href={link.url}
+                            aria-label={`${link.type} ${link.name} IMPHNEN`}
                             className={`group/button mt-3 border-2 border-dashed ${link.cardButtonClass} rounded-xl relative w-fit h-10 px-4 flex items-center justify-center transition-all duration-300`}
                         >
                             <span className="text-sm font-semibold">{link.type}</span>
