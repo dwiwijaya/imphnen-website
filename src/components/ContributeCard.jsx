@@ -20,7 +20,7 @@ export default function ContributionCard() {
                 <div className="absolute -bottom-10 right-0 w-40 h-40 bg-orange-500 opacity-30 rounded-full blur-2xl z-0" />
                 <div className="text-center md:text-left space-y-4 max-w-xl">
                     <div className="flex flex-row justify-center md:justify-start items-center md:items-start gap-2 md:gap-4">
-                        <h3 className="text-2xl font-bold text-gray-800">Dwi Wijaya</h3>
+                        <h3 className="text-lg sm:text-2xl font-bold text-gray-800">Dwi Wijaya</h3>
                         <span className="text-sm bg-blue-100 text-blue-600 font-medium px-3 py-1 rounded-full">
                             🚧 Open for Collab
                         </span>

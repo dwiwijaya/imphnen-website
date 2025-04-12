@@ -26,7 +26,7 @@ const Activity = () => {
         {
             icon: <PiRocketLight className="text-indigo-500" />,
             title: 'Showcase',
-            desc: 'Tunjukkan hasil karyamu disini tidak ada batasan implementasi.',
+            desc: 'Tunjukkan hasil karyamu disini, tidak ada batasan implementasi.',
             color: 'bg-indigo-100 border-indigo-300',
         },
         {
@@ -53,8 +53,8 @@ const Activity = () => {
         <section id="activity" className="text-center pt-4">
             <h2 className="text-4xl font-bold mb-4">Aktivitas Komunitas</h2>
             <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-600">
-                Imphnen bukan sekadar tempat bercanda—setiap hari ada aja kegiatan seru! Dari postingan lucu, debat framework,
-                sampe bantuin proyek sesama member.
+                <b>IMPHNEN</b> bukan sekadar sumber dopamin, setiap hari ada aja bahasan seru. Dari postingan lucu, sabung framework, 
+                sampe diskusi serius quarter-life crisis .
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-y-8 gap-x-10 sm:gap-x-6 gap-y-12">

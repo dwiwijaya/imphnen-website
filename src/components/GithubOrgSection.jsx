@@ -25,7 +25,9 @@ export default function GithubOrgSection() {
             Lihat dan ikuti <span className="text-blue-500">GitHub</span> kami
           </h2>
           <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-            Kami percaya pada semangat <span className="font-semibold text-sky-600">kolaborasi terbuka</span>. Organisasi GitHub kami berisi berbagai proyek open-source yang dikembangkan bersama komunitas.
+          Kami cinta FLOSS (Free/Libre and Open Source Software) — bukan cuma karena gratisan, tapi karena seru ngebangun bareng komunitas.
+
+Di organisasi GitHub kami, kamu bisa nemuin proyek-proyek open-source hasil kolaborasi bareng member. Mau kontribusi? Nambahin fitur? Atau cuma liat-liat sambil nyari inspirasi? Boleh banget.
           </p>
 
           <a
@@ -46,7 +48,7 @@ export default function GithubOrgSection() {
           {githubStatistics.map((stat, index) => (
             <div
               key={index}
-              className={`${stat.colorr} group relative  !bg-white border border-slate-200  rounded-2xl p-4 flex flex-col items-center text-center transition-all duration-300`}
+              className={`${stat.color} group relative  !bg-white border border-slate-200  rounded-2xl p-4 flex flex-col items-center text-center transition-all duration-300`}
             >
               <div className={`absolute -top-6 w-14 h-14 flex items-center justify-center`}>
                 <div className={`absolute w-full h-full border-2 border-dashed rounded-full ${stat.color} group-hover:animate-spin-slow`}></div>

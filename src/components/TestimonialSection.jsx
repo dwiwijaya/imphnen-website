@@ -110,7 +110,7 @@ export default function TestimonialSection() {
         <section id="testimony" className="text-center relative pt-4">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Testimoni Member</h2>
             <p className="text-gray-600 mb-8">
-                Kombinasi antara pengalaman receh dan serius dari para member setia.
+            Kisah nyata dari para pemalas produktif: ngoding dikit, fesnukan banyak. Tapi tetap keren (kadang).
             </p>
 
             {/* Tombol Prev */}
@@ -146,7 +146,7 @@ export default function TestimonialSection() {
                                     <p className="text-sm text-gray-500">{t.role}</p>
                                 </div>
                             </div>
-                            <div className={`relative bg-blue-50 rounded-full  w-11 !h-11 flex items-center justify-center`}>
+                            <div className={`relative bg-blue-50 rounded-full  min-w-11 !h-11 flex items-center justify-center`}>
                                 <div className={`absolute w-full h-full border-2 border-dashed rounded-full border-blue-300 group-hover:animate-spin-slow`}></div>
                                 {/* Icon tetap diam */}
                                 <div className="text-xl z-10 !h-fit">

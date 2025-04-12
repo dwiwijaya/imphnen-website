@@ -9,7 +9,7 @@ export default function FollowUsSection() {
             name: "Server Discord",
             url: "https://discord.gg/YOUR_INVITE",
             icon: <FaDiscord size={36} className="text-white" />,
-            desc: "Tempat nongkrong online yang selalu rame, entah lagi ngobrol soal kode, ngeluh hidup, atau sekadar nyalain mic biar nggak sepi.",
+            desc: "Tempat nongkrong online, entah lagi ngobrol kodingan, ngeluh hidup, atau sekadar nyalain mic biar nggak sepi, tenang disini ga disirkelin.",
             type: "Gabung",
             badgeText: "76k+ anggota",
             bgIcon: "bg-indigo-500",
@@ -23,7 +23,7 @@ export default function FollowUsSection() {
             name: "Grup Facebook",
             url: "https://www.facebook.com/groups/YOUR_FB_GROUP",
             icon: <FaFacebookF size={36} className="text-white" />,
-            desc: "Zona bebas judgement buat lo yang suka share meme absurd, screenshot error aneh, atau cuma pengen ngeluh betapa PHP masih hidup.",
+            desc: "Sumber dopamin utama para orang yang pengen jadi programmer handal yang gada motivasi selalu ada postingan menarik setiap hari.",
             type: "Gabung",
             badgeText: "150k+ anggota",
             bgIcon: "bg-blue-600",
@@ -51,7 +51,7 @@ export default function FollowUsSection() {
             name: "Page Facebook",
             url: "https://www.facebook.com/YOUR_PAGE",
             icon: <FaFacebookF size={36} className="text-white" />,
-            desc: "Follow buat update receh, pengumuman penting (kadang nggak penting), dan giveaway random dari admin waras setengah.",
+            desc: "Follow buat update atau liat pengumuman penting (kadang nggak penting), dan giveaway random dari admin waras setengah.",
             type: "Ikuti",
             badgeText: "42k+ followers",
             bgIcon: "bg-blue-500",
@@ -69,7 +69,7 @@ export default function FollowUsSection() {
         <section className="text-center pt-4">
             <h2 className="text-4xl font-extrabold mb-2 text-gray-800">Gabung & Ikuti Kami</h2>
             <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
-                Yuk, ikut nimbrung bareng komunitas. Mau curhat, belajar, atau nyari hiburan? Kita ada tempatnya semua!
+                Yuk, ikut nimbrung bareng komunitas. Mau ngobrol, curhat, belajar, atau nyari hiburan? Kita ada tempatnya semua!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
