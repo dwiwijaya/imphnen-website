@@ -13,7 +13,7 @@ const SEO = {
         description: defaultDescription,
         images: [
             {
-                url: 'https://imphnen-website/og-image.jpg', // Your image URL
+                url: 'https://imphnen-website.vercel.app/og-image.jpg', // Your image URL
                 width: 2550,
                 height: 945,
                 alt: defaultTitle,
