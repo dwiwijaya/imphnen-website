@@ -47,7 +47,7 @@ export default function FAQSection() {
                 {faqs.map((faq, idx) => (
                     <div
                         key={idx}
-                        className="cursor-pointer border-b border-slate-200 pb-4"
+                        className="cursor-pointer last:border-0 border-b border-slate-200 pb-4"
                         onClick={() => toggle(idx)}
                     >
                         <div className="flex justify-between items-center">

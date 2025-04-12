@@ -11,15 +11,7 @@ const founders = [
     avatar: '/avatars/founders/1.svg',
   },
   {
-    name: 'Rara',
-    role: 'Co-Founder / Community',
-    github: '#',
-    linkedin: '#',
-    telegram: '#',
-    avatar: '/avatars/founders/2.svg',
-  },
-  {
-    name: 'Yuda',
+    name: 'Vani',
     role: 'UI/UX Designer',
     github: '#',
     linkedin: '#',
@@ -35,12 +27,12 @@ const founders = [
     avatar: '/avatars/founders/4.svg',
   },
   {
-    name: 'Ayu',
-    role: 'Frontend Dev',
+    name: 'Rara',
+    role: 'Co-Founder / Community',
     github: '#',
     linkedin: '#',
     telegram: '#',
-    avatar: '/avatars/founders/5.svg',
+    avatar: '/avatars/founders/2.svg',
   },
   {
     name: 'Zaki',
@@ -49,6 +41,14 @@ const founders = [
     linkedin: '#',
     telegram: '#',
     avatar: '/avatars/founders/6.svg',
+  },
+  {
+    name: 'Ayu',
+    role: 'Frontend Dev',
+    github: '#',
+    linkedin: '#',
+    telegram: '#',
+    avatar: '/avatars/founders/5.svg',
   },
 ];
 

@@ -143,7 +143,7 @@ export default function TestimonialSection() {
                                 />
                                 <div className="flex flex-col">
                                     <p className="font-semibold text-gray-800">{t.name}</p>
-                                    <p className="text-sm text-gray-500">{t.role}</p>
+                                    <p className="text-sm text-gray-500 line-clamp-1">{t.role}</p>
                                 </div>
                             </div>
                             <div className={`relative bg-blue-50 rounded-full  min-w-11 !h-11 flex items-center justify-center`}>

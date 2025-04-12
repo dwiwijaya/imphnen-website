@@ -2,8 +2,8 @@ import { FaDiscord, FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="max-w-6xl mx-auto p-6 border-t border-slate-200">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-gray-600 text-sm">
+        <footer className="border-t border-slate-200 bg-slate-100">
+            <div className="max-w-6xl p-6  mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-gray-600 text-sm">
                 <div className="text-center md:text-left space-y-2">
                     <p className="font-semibold text-lg text-gray-800">
                         IMPHNEN

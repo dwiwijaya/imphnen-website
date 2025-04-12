@@ -38,31 +38,8 @@ export default function Home() {
         <title>IMPHNEN - Komunitas Enggan Ngoding</title>
       </Head>
       <main className={`${plusJakarta.className} relative bg-slate-50 `}>
-        <svg
-          className="absolute inset-0 h-full w-full stroke-slate-200 [mask-image:radial-gradient(75%_17.5%_at_top_center,white,transparent)]"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern
-              id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
-              width="25"
-              height="25"
-              x="50%"
-              y="-1"
-              patternUnits="userSpaceOnUse"
-            >
-              <path d="M.5 200V.5H200" fill="none"></path>
-            </pattern>
-          </defs>
-          <rect
-            width="100%"
-            height="100%"
-            strokeWidth="0"
-            fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
-          ></rect>
-        </svg>
-        <div className="max-w-6xl mx-auto p-6 flex flex-col gap-18">
-          <Hero />
+        <Hero />
+        <div className="max-w-6xl mx-auto px-6 pb-8 flex flex-col gap-18">
           <AboutSection />
           <Activity />
           <FollowUsSection />

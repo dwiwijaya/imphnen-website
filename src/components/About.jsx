@@ -11,30 +11,32 @@ const stats = [
 
 export default function AboutSection() {
     return (
-        <section id="about" className="pt-4 z-10">
-            <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <section id="about" className="pt-12 z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Text */}
                 <div>
                     <h2 className="text-4xl font-bold mb-6">Tentang Imphnen</h2>
-                    <p className="text-lg mb-4">
-                    IMPHNEN atau juga "Ingin Menjadi Programmer Handal Namun Enggan Ngoding" yang berawal dari sebuah grup facebook, dimana berisi orang-orang yang pengen menjadi programmer handal tetapi dia tidak ada semangat, motivasi, ataupun sebagainya untuk ngoding atau disebut dengan malas ngoding, dan digantikan aktivitasnya dengan scroll facebook. Kumunitas ini dibentuk pada awal 2024
+                    <p className="sm:text-lg mb-4">
+                        <b className="font-bold text-sky-500 underline-offset-4">IMPHNEN</b> atau "Ingin Menjadi Programmer Handal, Namun Enggan Ngoding"
+                        Bermula dari sebuah grup Facebook, komunitas ini menjadi tempat bagi orang-orang yang punya mimpi jadi <b>programmer handal</b>,  kalah sama <b>rasa malas</b> buat ngoding. Alih-alih produktif, mereka lebih asik scroll-scroll timeline. 😅
+                        Dibentuk pada awal <b>2023</b> , IMPHNEN hadir buat bantu kamu yang mau tapi susah banget mulai. Jadi, mau tetap mager atau mulai ngoding? Pilihan ada di tanganmu! 😎
                     </p>
 
                     {/* Fakta Menarik */}
                     <div className="space-y-3 text-base">
                         <div className="flex items-start gap-3">
-                            <span className="text-sky-500 text-xl"><PiUsersDuotone/></span>
+                            <span className="text-sky-500 text-xl"><PiUsersDuotone /></span>
                             <span><strong>150K+</strong> anggota komunitas</span>
                         </div>
                         <div className="flex items-start gap-3">
-                            <span className="text-green-500 text-xl"><PiSlideshowDuotone/></span>
+                            <span className="text-green-500 text-xl"><PiSlideshowDuotone /></span>
                             <span><strong>Meme</strong> & obrolan seru tiap hari</span>
                         </div>
                         <div className="flex items-start gap-3">
-                            <span className="text-yellow-500 text-xl"><PiLightbulbFilamentDuotone/></span>
+                            <span className="text-yellow-500 text-xl"><PiLightbulbFilamentDuotone /></span>
                             <span>Tempat lahirnya <strong>ide-ide revolusioner</strong></span>
                         </div>
-                        
+
                     </div>
                 </div>
 
