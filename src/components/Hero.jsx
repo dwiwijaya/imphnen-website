@@ -45,8 +45,8 @@ const Hero = () => {
                     </div>
                     <h1 className="text-4xl font-bold text-sky-700">Selamat Datang di <strong>IMPHNEN</strong></h1>
                     <p className="max-w-xl text-gray-600 text-sm">
-                        Bergabunglah dengan para sepuh-sepuh malas ngoding, dapatkan dopamin baru melalui postingan absurd member,
-                        Belajar skill baru? Bisa. Tapi kita lebih jago fesnukan sambil sabung framework. Yuk, gabung... atau enggak juga gapapa sih, kita lagi males promosi dan kita juga capek ngajakinnya, mau tidur dulu bentar.
+                        Hanya disini, dapatkan dopamin baru melalui postingan aneka ragam member,
+                        Belajar skill baru? Bisa. Tapi kita lebih jago fesnukan sambil sabung framework. Yuk, gabung sekarang... atau enggak juga nggak apa-apa sih. Kita juga lagi mager promosi. Capek. #lanjut-scroll-fesnuk
                     </p>
                 </div>
 
