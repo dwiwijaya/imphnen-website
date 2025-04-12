@@ -20,7 +20,7 @@ const settings = {
         </div>
     ),
     customPaging: i => (
-        <button className="w-3 h-3 rounded-full transition-all duration-300 ease-in-out bg-slate-300 hover:bg-slate-500"></button>
+        <button aria-label={`Go to slide ${i + 1}`} className="w-3 h-3 rounded-full transition-all duration-300 ease-in-out bg-slate-300 hover:bg-slate-500"></button>
     ),
     responsive: [
         {
@@ -110,12 +110,13 @@ export default function TestimonialSection() {
         <section id="testimony" className="text-center relative pt-4">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Testimoni Member</h2>
             <p className="text-gray-600 mb-8">
-            Kisah nyata dari para pemalas produktif: ngoding dikit, fesnukan banyak. Tapi tetap keren (kadang).
+                Kisah nyata dari para pemalas produktif: ngoding dikit, fesnukan banyak. Tapi tetap keren (kadang).
             </p>
 
             {/* Tombol Prev */}
 
             <button
+                aria-label="Previous Testimonial"
                 onClick={() => sliderRef.current?.slickPrev()}
                 className="absolute left-0 sm:-left-1 top-[70%] -translate-y-1/2 z-10 p-3 bg-white border border-slate-200 rounded-full shadow-md hover:bg-slate-100 transition"
             >
@@ -124,6 +125,7 @@ export default function TestimonialSection() {
 
             {/* Tombol Next */}
             <button
+                aria-label="Next Testimonial"
                 onClick={() => sliderRef.current?.slickNext()}
                 className="absolute  right-0 sm:-right-2 top-[70%] -translate-y-1/2 z-10 p-3 bg-white border border-slate-200 rounded-full shadow-md hover:bg-slate-100 transition"
             >
