@@ -51,7 +51,7 @@ export default function FAQSection() {
                         onClick={() => toggle(idx)}
                     >
                         <div className="flex justify-between items-center">
-                            <h3 className="font-semibold text-lg text-gray-800">{faq.question}</h3>
+                            <h3 className="font-semibold sm:text-lg text-gray-800">{faq.question}</h3>
                             <span className="text-sky-500 text-2xl">
                                 {active === idx ? '-' : '+'}
                             </span>

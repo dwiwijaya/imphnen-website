@@ -52,7 +52,7 @@ const Activity = () => {
     return (
         <section id="activity" className="text-center pt-4">
             <h2 className="text-4xl font-bold mb-4">Aktivitas Komunitas</h2>
-            <p className="text-lg mb-12 max-w-2xl mx-auto text-gray-600">
+            <p className="mb-12 text-gray-600">
                 <b>IMPHNEN</b> bukan sekadar sumber dopamin, setiap hari ada aja bahasan seru. Dari postingan lucu, sabung framework, 
                 sampe diskusi serius quarter-life crisis .
             </p>
