@@ -5,7 +5,7 @@ import COVER from '@/assets/cover.jpg'
 
 const Hero = () => {
     return (
-        <header id="home" className="min-h-svh flex flex-col items-center justify-start gap-8 p-6 pt-4 text-center">
+        <header id="home" className="z-10 min-h-svh flex flex-col items-center justify-start gap-8 p-6 pt-4 text-center">
             
 
             <nav className="w-full max-w-xl  text-sky-700 flex justify-center px-12 font-semibold text-sm">
