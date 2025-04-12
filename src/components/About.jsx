@@ -10,10 +10,10 @@ const stats = [
 
 export default function AboutSection() {
     return (
-        <section id="about" className="py-24 ">
+        <section id="about" className="">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Text */}
-                <div data-aos="fade-right">
+                <div>
                     <h2 className="text-4xl font-bold mb-6">Tentang Imphnen</h2>
                     <p className="text-lg mb-4">
                         Imphnen, atau lengkapnya <strong>"Ingin Menjadi Programmer Handal Namun Enggan Ngoding"</strong>,

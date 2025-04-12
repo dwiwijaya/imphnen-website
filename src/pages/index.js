@@ -17,6 +17,7 @@ import TestimonialSection from '@/components/TestimonialSection'
 import FAQSection from '@/components/FAQSection'
 import Footer from '@/components/Footer'
 import ContributionCard from '@/components/ContributeCard'
+import { AnimatedCounter } from '@/components/AnimatedCounter'
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -40,19 +41,19 @@ export default function Home() {
       <Head>
         <title>Next.js Starter Landing</title>
       </Head>
-      <main className={`${plusJakarta.className} relative bg-slate-50`}>
+      <main className={`${plusJakarta.className} relative bg-slate-50 `}>
+        <div className=" max-w-6xl mx-auto p-6 flex flex-col gap-18">
+          <Hero />
+          <AboutSection />
+          <Activity />
+          <FollowUsSection />
+          <TestimonialSection />
+          <FoundersSection />
+          <FAQSection />
+          <ContributionCard />
+        </div>
+          <Footer />
 
-        <Hero />
-        <AboutSection/>
-        <Activity/>
-        <GithubOrgSection/>
-        <FollowUsSection/>
-        <TestimonialSection/>
-        <ContributionCard/>
-        <FoundersSection/>
-        <FAQSection/>
-        <Footer/>
-        
       </main>
     </>
   )

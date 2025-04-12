@@ -27,3 +27,78 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.slick-track {
+  display: flex !important;
+  gap: 1.5rem !important;
+  padding: .25rem 0 !important;
+}
+
+.slick-dots-custom,
+.slick-dots-custom li,
+.slick-dots-custom li button {
+  height: 10px !important;
+}
+
+.slick-dots-custom {
+  gap: .25rem;
+}
+
+.slick-dots-custom li {
+  margin: 0 !important;
+  display: flex !important;
+  justify-content: center;
+  width: 12px;
+  transition: width 0.3s ease;
+}
+
+.slick-dots-custom li button {
+  line-height: 10px !important;
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 100 !important;
+  align-tracks: center !important;
+  border-radius: 100% !important;
+  background: #d2dce0 !important;
+}
+
+.slick-dots-custom li button::before {
+  display: none !important;
+}
+
+.slick-dots-custom li.slick-active {
+  background: #38bdf8;
+  /* from-sky-400 to-sky-600 */
+  width: 36px;
+  height: 10px;
+  border-radius: 9999px;
+}
+
+.slick-dots-custom li.slick-active button {
+  background: transparent !important;
+  transition: none;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+.slick-slide div {
+  height: 100%;
+}
+
+.slick-slide div div {
+  display: flex !important;
+}
+
+@theme {
+  --animate-spin-slow: spin-slow 6s linear infinite;
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -8,7 +8,7 @@ const founders = [
     github: '#',
     linkedin: '#',
     telegram: '#',
-    avatar: '/avatars/avatar1.png',
+    avatar: '/avatars/founders/1.svg',
   },
   {
     name: 'Rara',
@@ -16,7 +16,7 @@ const founders = [
     github: '#',
     linkedin: '#',
     telegram: '#',
-    avatar: '/avatars/avatar2.png',
+    avatar: '/avatars/founders/2.svg',
   },
   {
     name: 'Yuda',
@@ -24,7 +24,7 @@ const founders = [
     github: '#',
     linkedin: '#',
     telegram: '#',
-    avatar: '/avatars/avatar3.png',
+    avatar: '/avatars/founders/3.svg',
   },
   {
     name: 'Adit',
@@ -32,7 +32,7 @@ const founders = [
     github: '#',
     linkedin: '#',
     telegram: '#',
-    avatar: '/avatars/avatar4.png',
+    avatar: '/avatars/founders/4.svg',
   },
   {
     name: 'Ayu',
@@ -40,7 +40,7 @@ const founders = [
     github: '#',
     linkedin: '#',
     telegram: '#',
-    avatar: '/avatars/avatar5.png',
+    avatar: '/avatars/founders/5.svg',
   },
   {
     name: 'Zaki',
@@ -48,29 +48,29 @@ const founders = [
     github: '#',
     linkedin: '#',
     telegram: '#',
-    avatar: '/avatars/avatar6.png',
+    avatar: '/avatars/founders/6.svg',
   },
 ];
 
 export default function FoundersSection() {
   return (
-    <section className="py-16 px-6 text-center">
+    <section className="text-center">
       <h2 className="text-3xl font-bold mb-12">
         Here are the <span className="text-sky-500">minds</span> behind <span className="italic">Imphnen</span>
       </h2>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <div className="grid gap-6 grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="rounded-2xl p-6 shadow hover:shadow-lg transition-all text-left bg-white"
+            className="rounded-4xl px-6 pt-3 pb-5 border border-slate-200 transition-all text-left bg-white"
           >
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 relative rounded-full overflow-hidden">
+              <div className="w-28 h-32 relative overflow-hidden">
                 <Image
                   src={founder.avatar}
                   alt={founder.name}
                   fill
-                  className="object-cover"
+                  className=""
                 />
               </div>
               <div>
@@ -79,18 +79,18 @@ export default function FoundersSection() {
                   <FaCheckCircle className="text-sky-500" />
                 </h3>
                 <p className="text-gray-600 text-sm">{founder.role}</p>
+                <div className="flex justify-start mt-4 space-x-2 ">
+                  <a href={founder.github} target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="text-gray-700 hover:text-sky-500 text-xl" />
+                  </a>
+                  <a href={founder.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin className="text-gray-700 hover:text-sky-500 text-xl" />
+                  </a>
+                  <a href={founder.telegram} target="_blank" rel="noopener noreferrer">
+                    <FaTelegramPlane className="text-gray-700 hover:text-sky-500 text-xl" />
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="flex mt-4 space-x-4 pl-20">
-              <a href={founder.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-gray-700 hover:text-sky-500 text-xl" />
-              </a>
-              <a href={founder.linkedin} target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-gray-700 hover:text-sky-500 text-xl" />
-              </a>
-              <a href={founder.telegram} target="_blank" rel="noopener noreferrer">
-                <FaTelegramPlane className="text-gray-700 hover:text-sky-500 text-xl" />
-              </a>
             </div>
           </div>
         ))}

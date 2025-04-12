@@ -1,82 +1,122 @@
 import { FaFacebookF, FaInstagram, FaDiscord, FaUsers } from 'react-icons/fa';
+import { PiArrowRightFill, PiArrowRightLight } from 'react-icons/pi';
+import GithubOrgSection from './GithubOrgSection';
 
 export default function FollowUsSection() {
+
     const socialLinks = [
         {
-            name: "Komunitas Discord",
+            name: "Server Discord",
             url: "https://discord.gg/YOUR_INVITE",
-            icon: <FaDiscord size={32} />,
+            icon: <FaDiscord size={36} className="text-white" />,
+            desc: "Tempat nongkrong online yang selalu rame, entah lagi ngobrol soal kode, ngeluh hidup, atau sekadar nyalain mic biar nggak sepi.",
             type: "Gabung",
+            badgeText: "76k+ anggota",
+            bgIcon: "bg-indigo-500",
             bgColor: "bg-indigo-100",
-            border: "border border-indigo-300",
-            textColor: "text-indigo-700",
-            hover: "hover:bg-indigo-200",
+            borderColor: "border-indigo-300",
+            textColor: "text-indigo-800",
+            cardButtonClass: "bg-indigo-100 border-indigo-300 text-indigo-800",
+            cardBadgeClass: "bg-indigo-100 text-indigo-700",
         },
         {
             name: "Grup Facebook",
             url: "https://www.facebook.com/groups/YOUR_FB_GROUP",
-            icon: <FaFacebookF size={32} />,
+            icon: <FaFacebookF size={36} className="text-white" />,
+            desc: "Zona bebas judgement buat lo yang suka share meme absurd, screenshot error aneh, atau cuma pengen ngeluh betapa PHP masih hidup.",
             type: "Gabung",
+            badgeText: "150k+ anggota",
+            bgIcon: "bg-blue-600",
             bgColor: "bg-blue-100",
-            border: "border border-blue-300",
-            textColor: "text-blue-700",
-            hover: "hover:bg-blue-200",
-        },
-        {
-            name: "Fanspage",
-            url: "https://www.facebook.com/YOUR_PAGE",
-            icon: <FaFacebookF size={32} />,
-            type: "Ikuti",
-            bgColor: "bg-white",
-            border: "border border-blue-500",
-            textColor: "text-blue-600",
-            hover: "hover:bg-blue-50",
+            borderColor: "border-blue-300",
+            textColor: "text-blue-800",
+            cardButtonClass: "bg-blue-100 border-blue-300 text-blue-800",
+            cardBadgeClass: "bg-blue-100 text-blue-700",
         },
         {
             name: "Instagram",
             url: "https://www.instagram.com/YOUR_INSTAGRAM",
-            icon: <FaInstagram size={32} />,
+            icon: <FaInstagram size={36} className="text-white" />,
+            desc: "Isi feed random banget. Kadang meme, kadang polling ngoding, kadang postingan aesthetic dengan caption galau dev life.",
             type: "Ikuti",
-            bgColor: "bg-white",
-            border: "border border-pink-400",
-            textColor: "text-pink-500",
-            hover: "hover:bg-pink-50",
+            badgeText: "7k+ followers",
+            bgIcon: "bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600",
+            bgColor: "bg-pink-100",
+            borderColor: "border-pink-300",
+            textColor: "text-pink-800",
+            cardButtonClass: "bg-pink-100 border-pink-300 text-pink-800",
+            cardBadgeClass: "bg-pink-100 text-pink-700",
+        },
+        {
+            name: "Page Facebook",
+            url: "https://www.facebook.com/YOUR_PAGE",
+            icon: <FaFacebookF size={36} className="text-white" />,
+            desc: "Follow buat update receh, pengumuman penting (kadang nggak penting), dan giveaway random dari admin waras setengah.",
+            type: "Ikuti",
+            badgeText: "42k+ followers",
+            bgIcon: "bg-blue-500",
+            bgColor: "bg-blue-100",
+            borderColor: "border-blue-300",
+            textColor: "text-blue-800",
+            cardButtonClass: "bg-blue-100 border-blue-300 text-blue-800",
+            cardBadgeClass: "bg-blue-100 text-blue-700",
         },
     ];
 
+
+
     return (
-        <section className="py-12 px-4">
-            <div className="max-w-5xl mx-auto text-center">
+        <section className="text-center">
+            <div className="flex justify-center mb-4 animate-bounce">
+                <FaUsers className="text-5xl text-sky-600 drop-shadow-sm" />
+            </div>
 
-                <div className="flex justify-center mb-4">
-                    <FaUsers className="text-5xl text-blue-500" />
-                </div>
+            <h2 className="text-4xl font-extrabold mb-2 text-gray-800">Gabung & Ikuti Kami</h2>
+            <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+                Yuk, ikut nimbrung bareng komunitas. Mau curhat, belajar, atau nyari hiburan? Kita ada tempatnya semua!
+            </p>
 
-                <h2 className="text-3xl font-bold mb-2">Gabung & Ikuti Kami</h2>
-                <p className="text-gray-600 text-lg mb-8">
-                    Ikuti update terbaru, diskusi komunitas, dan info menarik lewat kanal sosial media kami. Yuk jadi bagian dari komunitas!
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {socialLinks.map((link, index) => (
-                        <a
-                            key={index}
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`flex items-center gap-4 p-4 rounded-xl shadow-sm transition-all ${link.bgColor} ${link.border} ${link.hover}`}
-                        >
-                            <div className={`p-3 rounded-full bg-white shadow-inner`}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {socialLinks.map((link, index) => (
+                    <div
+                        key={index}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`p-4 relative border-1 bg-white border-gray-200 rounded-2xl transition-transform hover:scale-[1.02]  text-left group`}
+                    >
+                        <div className={`flex items-center gap-2  rounded-t-2xl`}>
+                            <div className={`${link.bgIcon} p-2 rounded-xl`}>
                                 {link.icon}
                             </div>
-                            <div className="text-left flex-1">
-                                <p className={`font-semibold text-lg ${link.textColor}`}>{link.name}</p>
-                                <span className="text-sm text-gray-500">{link.type}</span>
+                            <div>
+                                <p className={`text-lg font-bold leading-4 mb-2 ${link.textColor}`}>{link.name}</p>
+                                <span className={`text-xs px-2 font-light py-1 leading-2 rounded-lg ${link.cardBadgeClass}`}>
+                                    {link.badgeText}
+                                </span>
                             </div>
+                        </div>
+                        <hr className="my-4 border-2 border-gray-200" />
+                        <p className="leading-5 text-sm text-gray-600  group-hover:text-gray-800 transition-colors duration-300">
+                            {link.desc}
+                        </p>
+
+                        <a
+                            href={link.url}
+                            className={`group/button mt-3 border-2 border-dashed ${link.cardButtonClass} rounded-xl relative w-fit h-10 px-4 flex items-center justify-center transition-all duration-300`}
+                        >
+                            <span className="text-sm font-semibold">{link.type}</span>
+                            <PiArrowRightLight
+                                size={20}
+                                title="Ikuti"
+                                className="ml-1 transition-transform duration-300 group-hover/button:translate-x-1"
+                            />
                         </a>
-                    ))}
-                </div>
+
+                    </div>
+                ))}
             </div>
+            <GithubOrgSection/>
         </section>
     );
 }

@@ -1,36 +1,74 @@
 import { FaGithub } from 'react-icons/fa';
+import {
+  PiBookBookmarkDuotone,
+  PiGitForkDuotone,
+  PiStarDuotone,
+  PiUsersFourDuotone,
+} from 'react-icons/pi';
+import { AnimatedCounter } from './AnimatedCounter';
 
 export default function GithubOrgSection() {
+  const githubStatistics = [
+    { label: 'Repositories', value: 42, icon: <PiBookBookmarkDuotone size={24} className="text-blue-600" />, color: "bg-blue-50 border-blue-300" },
+    { label: 'Contributors', value: 357, icon: <PiUsersFourDuotone size={24} className="text-green-600" />, color: "bg-green-50 border-green-300" },
+    { label: 'Stars', value: 781, icon: <PiStarDuotone size={24} className="text-yellow-500" />, color: "bg-yellow-50 border-yellow-300" },
+    { label: 'Forks', value: 266, icon: <PiGitForkDuotone size={24} className="text-pink-500" />, color: "bg-pink-50 border-pink-300" },
+  ];
+
   return (
-    <section className="py-16 px-6 bg-gradient-to-br from-blue-100 to-white rounded-3xl mx-4 lg:mx-20">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
-        
-        {/* KONTEN KIRI */}
-        <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-3xl font-bold mb-4">
-            Lihat <span className="text-blue-500">GitHub</span> kami untuk source code
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6 bg-gradient-to-br  rounded-3xl p-8 shadow-sm">
+
+      {/* KONTEN KIRI */}
+      <div className="flex flex-col justify-between">
+        <div className="text-left">
+          <h2 className="text-4xl font-extrabold mb-4 text-gray-800">
+            Lihat dan ikuti <span className="text-blue-500">GitHub</span> kami
           </h2>
-          <p className="text-gray-700 text-lg mb-6">
+          <p className="text-gray-700 text-lg mb-4 leading-relaxed">
             Kami percaya pada semangat <span className="font-semibold text-sky-600">kolaborasi terbuka</span>. Organisasi GitHub kami berisi berbagai proyek open-source yang dikembangkan bersama komunitas.
-            Baik kamu ingin eksplorasi, berkontribusi, atau sekadar belajar — kamu selalu diterima di sini.
           </p>
-          <p className="text-gray-600 mb-6">
-            GitHub menjadi rumah bagi ide, kode, dan kerja tim kami. Yuk lihat proyek-proyek yang sedang berjalan, kirim kontribusi lewat PR, atau beri bintang kalau kamu suka 🌟.
-          </p>
+
           <a
             href="https://github.com/YOUR_ORG"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 transition"
+            className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-900 transition"
           >
-            Kunjungi GitHub Kami
+            <FaGithub size={20} />
+            <div className="flex flex-col">
+              Kunjungi GitHub Kami
+            </div>
           </a>
         </div>
 
-        {/* IKON GITHUB */}
-        <div className="flex-1 flex justify-center lg:justify-end">
-          <FaGithub className="text-[180px] text-gray-800" />
+        {/* STATISTICS */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-3 gap-y-8 mt-10">
+          {githubStatistics.map((stat, index) => (
+            <div
+              key={index}
+              className={`${stat.colorr} group relative  !bg-white border border-slate-200  rounded-2xl p-4 flex flex-col items-center text-center transition-all duration-300`}
+            >
+              <div className={`absolute -top-6 w-14 h-14 flex items-center justify-center`}>
+                <div className={`absolute w-full h-full border-2 border-dashed rounded-full ${stat.color} group-hover:animate-spin-slow`}></div>
+                <div className="text-3xl z-10 ">
+                  {stat.icon}
+                </div>
+              </div>
+              <div className="mt-6">
+
+                <div className="text-xl font-semibold text-gray-800">
+                  <AnimatedCounter value={stat.value} />
+                </div>
+
+                <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
+
+      <div className="hidden lg:flex justify-end mt-10">
+        <FaGithub className="text-[260px] text-gray-800 opacity-10" />
       </div>
     </section>
   );
