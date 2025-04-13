@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import LOGO from '@/assets/logo.png'
+import LOGO from '@/assets/logo-compressed.png'
 import COVER from '@/assets/cover.jpg'
 import { Pattern } from './Pattern'
 
