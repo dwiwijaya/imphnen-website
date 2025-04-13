@@ -16,7 +16,7 @@ export default function GithubOrgSection() {
   ];
 
   return (
-    <section className="pt-6 grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6 bg-gradient-to-br from-slate-50 to-blue-50  rounded-3xl p-8 border border-slate-200">
+    <section  data-aos="fade-up" data-aos-delay={200} className="pt-6 grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6 bg-gradient-to-br from-slate-50 to-blue-50  rounded-3xl p-8 border border-slate-200">
 
       {/* KONTEN KIRI */}
       <div className="flex flex-col justify-between">
@@ -35,7 +35,7 @@ export default function GithubOrgSection() {
             aria-label="Kunjungi GitHub Kami"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-900 transition"
+            className="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-900 transition"
           >
             <FaGithub size={20} />
             <div className="flex flex-col">
@@ -49,7 +49,9 @@ export default function GithubOrgSection() {
           {githubStatistics.map((stat, index) => (
             <div
               key={index}
-              className={`group relative  !bg-white border border-slate-200  rounded-2xl p-4 flex flex-col items-center text-center transition-all duration-300`}
+              data-aos="zoom-in"
+              data-aos-delay={index * 50}
+              className={`group relative  !bg-white border border-slate-200  rounded-2xl p-4 flex flex-col items-center text-center transition-all duration-200 hover:scale-105 hover:shadow-sm`}
             >
               <div className={`absolute -top-6 w-14 h-14 flex items-center justify-center`}>
                 <div className={`absolute w-full h-full border-2 border-dashed rounded-full ${stat.color} group-hover:animate-spin-slow`}></div>

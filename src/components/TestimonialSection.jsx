@@ -134,7 +134,7 @@ export default function TestimonialSection() {
             {/* Slider */}
             <Slider {...settings} ref={sliderRef}>
                 {testimonials.map((t, idx) => (
-                    <div key={idx} className="group flex flex-col !gap-4 h-full transition-transform hover:scale-[1.02] bg-white border border-slate-200 rounded-xl p-6 text-left">
+                    <div key={idx} data-aos="zoom-in" data-aos-delay={idx * 50} className="group flex flex-col !gap-4 h-full transition-transform hover:scale-[1.02] bg-white border border-slate-200 rounded-4xl p-6 text-left">
 
                         <div className="!flex items-center justify-between gap-4 !h-fit">
                             <div className="flex gap-3">

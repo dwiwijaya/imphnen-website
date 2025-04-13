@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function FAQSection() {
-    const [active, setActive] = useState(null);
+    const [active, setActive] = useState(0);
 
     const faqs = [
         {
@@ -46,6 +46,9 @@ export default function FAQSection() {
             <div className="text-left space-y-4">
                 {faqs.map((faq, idx) => (
                     <div
+                        data-aos="fade-up"
+                        data-aos-delay={idx * 50}
+                        data-aos-offset="20"
                         key={idx}
                         className="cursor-pointer last:border-0 border-b border-slate-200 pb-4"
                         onClick={() => toggle(idx)}

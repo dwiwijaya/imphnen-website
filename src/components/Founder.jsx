@@ -65,19 +65,19 @@ export default function FoundersSection() {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {founders.map((founder, index) => (
           <div
+            data-aos="fade-up"
+            data-aos-delay={index * 50}
             key={index}
             className="rounded-4xl px-5 pt-2 pb-0 border border-slate-200 transition-all text-left bg-white"
           >
             <div className="flex items-center space-x-4">
-              <div className="relative overflow-hidden rounded-xl">
-                <Image
-                  src={founder.avatar}
-                  alt={founder.name}
-                  width={112} // contoh: 112px (sama dengan w-28)
-                  height={130} // atau bisa biarin ratio asli (lihat opsi bawah)
-                  className="h-[130px] object-contain object-bottom"
-                />
-              </div>
+              <Image
+                src={founder.avatar}
+                alt={founder.name}
+                width={112} // contoh: 112px (sama dengan w-28)
+                height={130} // atau bisa biarin ratio asli (lihat opsi bawah)
+                className="h-[130px] w-[112px]  object-contain object-bottom"
+              />
 
               <div>
                 <h3 className="text-xl font-semibold flex items-center gap-1">
@@ -87,7 +87,7 @@ export default function FoundersSection() {
                 <p className="text-gray-600 text-sm">{founder.role}</p>
                 <div className="flex justify-start mt-3 space-x-2 ">
                   <a href={founder.github} target="_blank" rel="noopener noreferrer" aria-label={`Github ${founder.name}`}>
-                    <FaGithub className="text-gray-700 hover:text-sky-500 text-xl"  />
+                    <FaGithub className="text-gray-700 hover:text-sky-500 text-xl" />
                   </a>
                   <a href={founder.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`Linkedin ${founder.name}`}>
                     <FaLinkedin className="text-gray-700 hover:text-sky-500 text-xl" />

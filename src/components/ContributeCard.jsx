@@ -15,7 +15,7 @@ export default function ContributionCard() {
                 </p>
             </div>
 
-            <div className="overflow-hidden bg-gradient-to-br from-white to-slate-50 rounded-3xl border border-slate-200 px-8 pt-6  flex flex-col md:flex-row items-center justify-between gap-6 relative z-10 transition duration-300">
+            <div data-aos="zoom-in" className="overflow-hidden bg-gradient-to-br from-white to-slate-50 rounded-4xl border border-slate-200 px-8 pt-6  flex flex-col md:flex-row items-center justify-between gap-6 relative z-10 transition duration-300">
                 <div className="absolute -top-6 -left-10 w-40 h-40 bg-blue-300 opacity-30 rounded-full blur-2xl z-0" />
                 <div className="absolute -bottom-10 right-0 w-40 h-40 bg-orange-500 opacity-30 rounded-full blur-2xl z-0" />
                 <div className="text-center md:text-left space-y-4 max-w-xl">

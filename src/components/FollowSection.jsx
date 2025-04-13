@@ -76,6 +76,8 @@ export default function FollowUsSection() {
                 {socialLinks.map((link, index) => (
                     <div
                         key={index}
+                        data-aos="fade-up"
+                        data-aos-delay={index * 50}
                         rel="noopener noreferrer"
                         className={`p-4 relative border-1 bg-white border-gray-200 rounded-2xl transition-transform hover:scale-[1.02]  text-left group`}
                     >

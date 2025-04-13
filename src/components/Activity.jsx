@@ -61,8 +61,9 @@ const Activity = () => {
                 {activities.map((activity, i) => (
                     <div
                         key={i}
-                        data-aos-delay={i * 100}
-                        className={`relative p-6 border border-gray-200 rounded-2xl text-left transition-all duration-300 bg-white hover:scale-[1.02] group`}
+                        data-aos="fade-up"
+                        data-aos-delay={i * 50}
+                        className={`relative p-6 border border-gray-200 rounded-2xl text-left transition-all duration-200 bg-white hover:scale-[1.02] group`}
                     >
                         {/* Border wrapper that spins on hover */}
                         <div className={`absolute -top-6 w-14 h-14 flex items-center justify-center mb-4`}>

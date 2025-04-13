@@ -12,7 +12,7 @@ const stats = [
 export default function AboutSection() {
     return (
         <section id="about" className="pt-12 z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Text */}
                 <div>
                     <h2 className="text-4xl font-bold mb-6">Tentang Imphnen</h2>
@@ -40,7 +40,7 @@ export default function AboutSection() {
                     </div>
                 </div>
 
-                <div className="">
+                <div data-aos="fade-left" className="">
                     <Image src={Illust} className="-rotate-y-180 hidden md:block" alt="preview" width={500} height={500} />
                 </div>
             </div>
