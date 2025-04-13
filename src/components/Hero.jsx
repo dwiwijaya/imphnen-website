@@ -31,7 +31,7 @@ const Hero = () => {
                             Belajar skill baru? Bisa. Tapi kita lebih jago fesnukan sambil sabung framework. Yuk, gabung sekarang... atau enggak juga nggak apa-apa sih. Kita juga lagi mager promosi. Capek. #lanjut-scroll-fesnuk
                         </p>
                         <div className="flex gap-4 pt-4 text-sm w-full">
-                            <a href="#" className="flex-1 whitespace-nowrap bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg px-6 py-3 transition">
+                            <a href="#join&follow" className="flex-1 whitespace-nowrap bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg px-6 py-3 transition">
                                 Bergabung Sekarang
                             </a>
                             <a href="#about" className="flex-1 whitespace-nowrap border-3 border-dashed border-sky-200 bg-white  text-sky-400 hover:bg-sky-50 font-semibold rounded-lg px-6 py-3 transition">

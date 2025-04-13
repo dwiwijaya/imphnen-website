@@ -66,7 +66,7 @@ export default function FollowUsSection() {
 
 
     return (
-        <section className="text-center pt-4">
+        <section id="join&follow" className="text-center pt-4">
             <h2 className="text-4xl font-extrabold mb-2 text-gray-800">Gabung & Ikuti Kami</h2>
             <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
                 Yuk, ikut nimbrung bareng komunitas. Mau ngobrol, curhat, belajar, atau nyari hiburan? Kita ada tempatnya semua!
