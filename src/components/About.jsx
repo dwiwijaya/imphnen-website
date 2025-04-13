@@ -41,7 +41,7 @@ export default function AboutSection() {
                 </div>
 
                 <div data-aos="fade-left" className="">
-                    <Image src={Illust} className="-rotate-y-180 hidden md:block" alt="preview" width={500} height={500} />
+                    <Image src={Illust} className="-rotate-y-180 hidden md:block" alt="preview" width={500} height={500} loading="lazy" />
                 </div>
             </div>
         </section>

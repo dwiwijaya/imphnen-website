@@ -19,7 +19,7 @@ const Hero = () => {
 
 
                 <div className="z-10 flex flex-1 h-full flex-col justify-center items-center gap-4">
-                    <Image data-aos="zoom-in" src={LOGO} alt="logo" width={200} height={200} className="w-80 lg:w-96 drop-shadow-xl z-10" />
+                    <Image data-aos="zoom-in" src={LOGO} alt="logo" width={200} height={200} className="w-80 lg:w-96 drop-shadow-xl z-10" priority loading="eager" />
 
                     <div data-aos="fade-up" className="flex flex-col  gap-3 items-center mt-4 sm:mt-8">
                         <div className="px-4 py-1 text-sm border-2 border-dashed bg-sky-100 border-sky-200 text-sky-700 rounded-full font-medium animate-pulse">
