@@ -1,15 +1,26 @@
-import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaUsers, FaSmileBeam, FaDiscord, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { PiLightbulbFilamentDuotone, PiSlideshowDuotone, PiUsersDuotone } from 'react-icons/pi';
+
 import Illust from '@/assets/social.svg';
-import { PiLightbulbFilamentDuotone, PiLightbulbLight, PiSlideshowDuotone, PiUsersDuotone, PiUsersLight } from 'react-icons/pi';
-const stats = [
-    { icon: <FaUsers />, label: 'Anggota Aktif', value: '10.000+' },
-    { icon: <FaDiscord />, label: 'Server Discord', value: 'Seru dan chaos 🤙' },
-    { icon: <FaSmileBeam />, label: 'Meme Terunggah', value: '5000+ lol moments' },
-];
 
 export default function AboutSection() {
+    const communityHighlights = [
+        {
+            icon: <PiUsersDuotone className="text-sky-500" />,
+            highlight: "150K+",
+            description: "anggota komunitas",
+        },
+        {
+            icon: <PiSlideshowDuotone className="text-green-500" />,
+            highlight: "Meme",
+            description: "& obrolan seru tiap hari",
+        },
+        {
+            icon: <PiLightbulbFilamentDuotone className="text-yellow-500" />,
+            highlight: "ide-ide revolusioner",
+            description: "Tempat lahirnya",
+        },
+    ];
     return (
         <section id="about" className="pt-12 z-10">
             <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -22,21 +33,15 @@ export default function AboutSection() {
                         Dibentuk pada awal <b>2023</b> , IMPHNEN hadir buat bantu kamu yang mau tapi susah banget mulai. Jadi, mau tetap mager atau mulai ngoding? Pilihan ada di tanganmu! 😎
                     </p>
 
-                    {/* Fakta Menarik */}
                     <div className="space-y-3 text-base">
-                        <div className="flex items-start gap-3">
-                            <span className="text-sky-500 text-xl"><PiUsersDuotone /></span>
-                            <span><strong>150K+</strong> anggota komunitas</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <span className="text-green-500 text-xl"><PiSlideshowDuotone /></span>
-                            <span><strong>Meme</strong> & obrolan seru tiap hari</span>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <span className="text-yellow-500 text-xl"><PiLightbulbFilamentDuotone /></span>
-                            <span>Tempat lahirnya <strong>ide-ide revolusioner</strong></span>
-                        </div>
-
+                        {communityHighlights.map((highlight, index) => (
+                            <div key={index} className="flex items-start gap-3">
+                                <span className={`${highlight.iconColor} text-xl`}>{highlight.icon}</span>
+                                <span>
+                                    <strong>{highlight.highlight}</strong> {highlight.description}
+                                </span>
+                            </div>
+                        ))}
                     </div>
                 </div>
 

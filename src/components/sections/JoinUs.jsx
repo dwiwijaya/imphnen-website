@@ -1,8 +1,8 @@
 import { FaFacebookF, FaInstagram, FaDiscord, FaUsers } from 'react-icons/fa';
 import { PiArrowRightFill, PiArrowRightLight } from 'react-icons/pi';
-import GithubOrgSection from './GithubOrgSection';
+import GithubOrgSection from './GithubOrg';
 
-export default function FollowUsSection() {
+export default function JoinUsSection() {
 
     const socialLinks = [
         {

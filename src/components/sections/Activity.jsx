@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     PiSmileyLight,
-    PiSwordLight,
     PiRocketLight,
     PiGiftLight,
     PiLaptopLight,
@@ -9,7 +8,7 @@ import {
     PiFireLight,
 } from 'react-icons/pi'
 
-const Activity = () => {
+export default function ActivitySection() {
     const activities = [
         {
             icon: <PiSmileyLight className="text-pink-500" />,
@@ -87,5 +86,3 @@ const Activity = () => {
         </section>
     )
 }
-
-export default Activity

@@ -1,14 +1,13 @@
 import { FaGithub, FaLinkedin, FaTelegram, FaCheckCircle } from "react-icons/fa";
 
-export default function ContributionCard() {
+export default function ContributionSection() {
     return (
         <section className="relative pt-4">
-            {/* Background decorative blur blobs */}
 
             <div className="text-center mb-10 relative z-10">
                 <h2 className="text-3xl font-bold leading-tight">
                     Punya ide keren buat{" "}
-                    <span className="text-blue-600">ngembangin komunitas?</span> 🚀
+                    <span className="text-blue-600">ngembangin website komunitas?</span> 🚀
                 </h2>
                 <p className="text-gray-600 mt-2 max-w-xl mx-auto">
                     Kami terbuka banget untuk masukan, ide, dan kontribusi bareng!

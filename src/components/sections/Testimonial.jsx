@@ -8,12 +8,13 @@ const settings = {
     variableWidth: false,
     centerPadding: 0,
     dots: true,
-    arrows: false, // arrows tetap false, kita pakai custom button
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    autoplaySpeed: 4500,
+    autoplaySpeed: 2000,
     slidesToScroll: 1,
+    autoplay: true,
     appendDots: dots => (
         <div style={{ marginTop: "32px" }}>
             <ul className="slick-dots-custom flex justify-center gap-3">{dots}</ul>
@@ -24,10 +25,10 @@ const settings = {
     ),
     responsive: [
         {
-            breakpoint: 1536,
+            breakpoint: 2560,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true
             }
@@ -36,7 +37,7 @@ const settings = {
             breakpoint: 1280,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 initialSlide: 2
             }
         },

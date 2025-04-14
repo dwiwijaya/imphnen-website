@@ -1,23 +1,14 @@
-import Image from 'next/image'
 import React from 'react'
-import LOGO from '@/assets/logo-compressed.png'
-import COVER from '@/assets/cover.jpg'
-import { Pattern } from './Pattern'
+import { Pattern } from '../common/Pattern'
+import Navbar from '../layout/Navbar'
 
-const Hero = () => {
+export default function HeroSection() {
     return (
         <section id="home" className="relative min-h-svh bg-gradient-to-t from-sky-50 to-slate-white ">
 
             <Pattern />
             <header className="z-10 h-svh flex flex-col items-center justify-start gap-8 p-6 pt-10 text-center">
-                <nav className="z-10 sm:gap-4 w-full max-w-xl text-sky-700 flex justify-center px-12 font-semibold text-sm">
-                    <a href="#home" aria-label="Beranda" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Beranda</a>
-                    <a href="#about" aria-label="Tentang" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Tentang</a>
-                    <a href="#activity" aria-label="Acara" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Acara</a>
-                    <a href="#testimony" aria-label="Testimoni" className="hover:text-white hover:bg-sky-500 px-3 py-1 rounded-xl transition">Testimoni</a>
-                </nav>
-
-
+                <Navbar />
                 <div className="z-10 flex flex-1 h-full flex-col justify-center items-center gap-4">
                     <img
                         data-aos="zoom-in"
@@ -54,5 +45,3 @@ const Hero = () => {
         </section>
     )
 }
-
-export default Hero

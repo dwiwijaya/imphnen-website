@@ -75,8 +75,8 @@ export default function FoundersSection() {
                 src={founder.avatar}
                 alt={founder.name}
                 loading="lazy"
-                width={112} // contoh: 112px (sama dengan w-28)
-                height={130} // atau bisa biarin ratio asli (lihat opsi bawah)
+                width={112}
+                height={130}
                 className="h-[130px] w-[112px]  object-contain object-bottom"
               />
 

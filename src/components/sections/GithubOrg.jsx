@@ -5,7 +5,7 @@ import {
   PiStarDuotone,
   PiUsersFourDuotone,
 } from 'react-icons/pi';
-import { AnimatedCounter } from './AnimatedCounter';
+import { AnimatedCounter } from '../ui/AnimatedCounter';
 
 export default function GithubOrgSection() {
   const githubStatistics = [
