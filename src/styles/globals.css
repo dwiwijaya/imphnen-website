@@ -31,7 +31,7 @@ html {
 .slick-track {
   display: flex !important;
   gap: 1.5rem !important;
-  padding: 1.25rem .25rem 0 !important;
+  padding: .75rem 0px !important;
 }
 
 .slick-dots-custom,

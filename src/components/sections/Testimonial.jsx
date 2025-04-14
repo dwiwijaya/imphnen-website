@@ -16,7 +16,7 @@ const settings = {
     slidesToScroll: 1,
     autoplay: true,
     appendDots: dots => (
-        <div style={{ marginTop: "32px" }}>
+        <div>
             <ul className="slick-dots-custom flex justify-center gap-3">{dots}</ul>
         </div>
     ),
@@ -128,7 +128,7 @@ export default function TestimonialSection() {
             <button
                 aria-label="Next Testimonial"
                 onClick={() => sliderRef.current?.slickNext()}
-                className="absolute  right-0 sm:-right-2 top-[70%] -translate-y-1/2 z-10 p-3 bg-white border border-slate-200 rounded-full shadow-md hover:bg-slate-100 transition"
+                className="absolute  -right-2 sm:-right-2 top-[70%] -translate-y-1/2 z-10 p-3 bg-white border border-slate-200 rounded-full shadow-md hover:bg-slate-100 transition"
             >
                 <FaChevronRight className="text-xl text-slate-600" />
             </button>
