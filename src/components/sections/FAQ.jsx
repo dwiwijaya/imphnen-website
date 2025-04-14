@@ -8,7 +8,7 @@ export default function FAQSection() {
         {
             question: "Komunitas ini fokusnya ke mana sih?",
             answer:
-                "Kita fokus di dunia web development, programming, open source, dan tentunya… meme yang relate sama dunia IT 😅",
+                "Kita fokus di dunia programming, open source, dan tentunya… meme yang relate sama dunia IT 😅",
         },
         {
             question: "Harus jago dulu buat gabung?",
